@@ -1,0 +1,8 @@
+{
+  "name": "student-feedback-devops",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student feedback web application with GitHub Actions CI/CD",
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=20" }
+}

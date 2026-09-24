@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Student Feedback</h1>
+      <p class="subtitle">Share your experience with us.</p>
+      <form id="feedbackForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required maxlength="80" placeholder="Enter your name">
+        <label for="course">Course</label>
+        <input id="course" name="course" type="text" required maxlength="100" placeholder="Enter your course">
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" name="feedback" required maxlength="500" rows="5" placeholder="Write your feedback"></textarea>
+        <button type="submit">Submit Feedback</button>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Submitted Feedback</h2>
+      <div id="feedbackList" class="feedback-list"><p class="empty">No feedback submitted yet.</p></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
